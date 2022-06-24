@@ -6,6 +6,8 @@ function App() {
   <div className='App'>
     <div className='TittleSection'>
     <h1>Pokemon Stats</h1>
+    <input type="text"></input>
+    <button >Search Pokemon</button>
     </div>
   </div>)
 }
