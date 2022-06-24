@@ -5,11 +5,12 @@ import axios from "axios";
 function App() {
     const [pokemonName, setPokemonName] = useState("")
 
-    const searchPokemon = () =>{
-        axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`).then((Response) =>{
-            console.log(Response);
+    const searchPokemon = () => {
+        axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`).then((response) => {
+            console.log(response);
         })
     }
+    
     return (
         <div className='App'>
             <div className='TittleSection'>
