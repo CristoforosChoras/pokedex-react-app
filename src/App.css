@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #0075BE;
 }
 
 .App{
@@ -45,13 +46,26 @@ body{
 .TittleSection button:hover{
     cursor: pointer;
     color: #0075BE;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
     border: 4px #0075BE solid ;
 }
 .pokemonCard{
-    display: flex;
-    justify-content: center;  
-      align-items: center;
+    width: 100%;
+    display: flex; 
+    align-items: center;
     flex-direction: column;
+}
+
+.pokemonCard img{
+    width: 13%;
+    height: 20%;
+    border-radius: 50%;
+    border: #D5A100 25px solid;
+    color: #FFCC00;
+}
+
+.pokemonCard, h3{
+    margin: 1%;
+    color: #FFCC00;
 }
 /* #D5A100 */
