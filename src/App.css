@@ -28,7 +28,7 @@ body{
 
 }
 .TittleSection input{
-    width: 18%;
+    width: 27%;
     height: 20%;
     border: none;
     border-radius: 10px;
@@ -37,12 +37,12 @@ body{
     color: white;
 }
 .TittleSection button{
-    width: 22%;
+    width: 25%;
     height: 25%;
     border: none;
     border-radius: 10px;
     background-color: #D5A100;
-    font-size: 25px;
+    font-size: 1.9rem;
     color: white;
 }
 .TittleSection button:hover{
@@ -71,7 +71,7 @@ body{
     color: #FFCC00;
 }
 
-
+ 
 @media (max-width: 500px){
     .TittleSection{
         height: 17rem;
@@ -80,35 +80,41 @@ body{
         font-size: 3.5rem;
     }
     .TittleSection button{
-        width: 60%;
+        width: 50%;
         height: 25%;
+        font-size: 0.8rem;
     }
     .TittleSection input{
-        width: 50%;
+        width: 60%;
         height: 20%;
     }
     .pokemonCard h1{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
    
-}
+} 
 @media (max-width: 700px){
     .TittleSection button{
-        width: 50%;
+        width: 40%;
         height: 25%;
+        font-size:3rem;
     }
     .TittleSection input{
-        width: 35%;
+        width: 45%;
         height: 20%;
+    }
+    .pokemonCard h1{
+        font-size: 2rem;
     }
 }
 @media (max-width: 1000px){
     .TittleSection button{
-        width: 35%;
+        width: 30%;
         height: 25%;
+        font-size: 1.6rem;
     }
     .TittleSection input{
-        width: 30%;
+        width: 35%;
         height: 20%;
     }
 }
