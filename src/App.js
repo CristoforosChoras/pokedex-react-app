@@ -12,6 +12,7 @@ function App() {
         stats: "",
         type: "",
     })
+   
     const searchPokemon = () => {
         
         axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`).then((response) => {
@@ -32,8 +33,8 @@ function App() {
     return (
         <div className='App'>
             <div className='TittleSection'>
-                <h1>Pokemon Stats</h1>
-                <input type="text" onChange={(event) => { setPokemonName(event.target.value) }}></input>
+                <h1>Pokedex</h1>
+                <input type="text" onChange={(event) => { setPokemonName(event.target.value) }} ></input>
                 <button onClick={searchPokemon}>Search Pokemon</button>
             </div>
             <div className='pokemonCard'>{
