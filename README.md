@@ -1,7 +1,7 @@
 # Pokedex web app
 
 
-**[Test this app yourself]()**
+**[Test this app yourself](cristoforoschoras.github.io/pokedex-react-app/)**
 
 ---
 
