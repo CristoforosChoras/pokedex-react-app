@@ -1,15 +1,23 @@
 import './App.css';
-import { useState} from "react"
+import { useState } from "react"
+import axios from "axios";
 
 function App() {
-    return(
-  <div className='App'>
-    <div className='TittleSection'>
-    <h1>Pokemon Stats</h1>
-    <input type="text"></input>
-    <button >Search Pokemon</button>
-    </div>
-  </div>)
+    const [pokemonName, setPokemonName] = useState("")
+
+    const searchPokemon = () =>{
+        axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`).then((Response) =>{
+            console.log(Response);
+        })
+    }
+    return (
+        <div className='App'>
+            <div className='TittleSection'>
+                <h1>Pokemon Stats</h1>
+                <input type="text" onChange={(event) => { setPokemonName(event.target.value) }}></input>
+                <button onClick={searchPokemon}>Search Pokemon</button>
+            </div>
+        </div>)
 }
 
 export default App;
